@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokat Taşhan (Voyvoda Han, 1631) — 3D Mimari Simülasyon</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/tashan-flash/assets/index-6yhJcTqj.js"></script>
+  <link rel="stylesheet" crossorigin href="/tashan-flash/assets/index-Cdr6eQer.css">
+</head>
+<body>
+  <div id="canvas-container"></div>
+
+  <!-- Reticle / Crosshair -->
+  <div id="crosshair"></div>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-content">
+      <div class="loader-title">TOKAT TAŞHAN</div>
+      <div class="loader-subtitle">VOYVODA HANI • 1631</div>
+      <div class="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+      <div id="loading-status">Mimari modeller ve PBR dokular yükleniyor...</div>
+    </div>
+  </div>
+
+  <!-- UI Controls Overlay -->
+  <div id="ui-overlay">
+    <!-- Header Badge -->
+    <div class="title-badge">
+      <h1>TOKAT TAŞHAN</h1>
+      <span class="era">VOYVODA HANI • 1631</span>
+      <span class="stats-badge" id="fps-counter">60 FPS</span>
+    </div>
+
+    <!-- Time of Day & Lighting Switcher -->
+    <div class="tod-panel">
+      <button class="tod-btn" data-time="noon">
+        <span class="icon">☀️</span> Öğle
+      </button>
+      <button class="tod-btn active" data-time="golden">
+        <span class="icon">🌅</span> Altın Saat
+      </button>
+      <button class="tod-btn" data-time="night">
+        <span class="icon">🏮</span> Akşam Fenerleri
+      </button>
+      <button class="tod-btn" id="fly-btn" title="Klavye Kısayolu: V">
+        <span class="icon">🕊️</span> Serbest Uçuş (V)
+      </button>
+    </div>
+
+    <!-- Camera Quick Inspection Views (For Architecture Review) -->
+    <div class="view-panel" id="view-panel">
+      <div class="panel-header">MİMARİ BAKIŞ NOKTALARI</div>
+      <div class="view-buttons">
+        <button class="view-btn" data-view="portal">1. Taçkapı Girişi</button>
+        <button class="view-btn" data-view="courtyard">2. Avlu & Revaklar</button>
+        <button class="view-btn" data-view="arcade">3. Zemin Revak Koridoru</button>
+        <button class="view-btn" data-view="balcony">4. 2. Kat Revak Balkonu</button>
+        <button class="view-btn" data-view="stairs">5. Merdiven & Taş Duvar</button>
+      </div>
+    </div>
+
+    <!-- Controls Help Overlay -->
+    <div class="help-card" id="help-card">
+      <div class="help-header">
+        <span>🎮 Kontroller</span>
+        <button id="toggle-help" title="Kapat/Aç">_</button>
+      </div>
+      <div class="help-body">
+        <div class="key-row"><span class="key">Tıkla / Sürükle</span> <span>Serbest Bakış (FPS)</span></div>
+        <div class="key-row"><span class="key">W A S D</span> <span>Yürüme / Uçuş</span></div>
+        <div class="key-row"><span class="key">Shift</span> <span>Hızlı Adım / Koşu</span></div>
+        <div class="key-row"><span class="key">Boşluk</span> <span>Zıpla / Yüksel</span></div>
+        <div class="key-row"><span class="key">V</span> <span>Serbest Uçuş / Yürüme</span></div>
+        <div class="key-row"><span class="key">1 - 5</span> <span>Hızlı Mimari Görünümler</span></div>
+        <div class="key-row"><span class="key">ESC</span> <span>Fareyi Serbest Bırak</span></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
