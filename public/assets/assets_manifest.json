@@ -1,0 +1,43 @@
+{
+  "textures": {
+    "stone": {
+      "diffuse": "/assets/textures/stone/stone_diffuse.jpg",
+      "normal": "/assets/textures/stone/stone_normal.jpg",
+      "roughness": "/assets/textures/stone/stone_roughness.jpg",
+      "ao": "/assets/textures/stone/stone_ao.jpg"
+    },
+    "brick": {
+      "diffuse": "/assets/textures/brick/brick_diffuse.jpg",
+      "normal": "/assets/textures/brick/brick_normal.jpg",
+      "roughness": "/assets/textures/brick/brick_roughness.jpg",
+      "ao": "/assets/textures/brick/brick_ao.jpg"
+    },
+    "cobble": {
+      "diffuse": "/assets/textures/cobble/cobble_diffuse.jpg",
+      "normal": "/assets/textures/cobble/cobble_normal.jpg",
+      "roughness": "/assets/textures/cobble/cobble_roughness.jpg",
+      "ao": "/assets/textures/cobble/cobble_ao.jpg"
+    },
+    "roof": {
+      "diffuse": "/assets/textures/roof/roof_diffuse.jpg",
+      "normal": "/assets/textures/roof/roof_normal.jpg",
+      "roughness": "/assets/textures/roof/roof_roughness.jpg",
+      "ao": "/assets/textures/roof/roof_ao.jpg"
+    },
+    "wood": {
+      "diffuse": "/assets/textures/wood/wood_diffuse.jpg",
+      "normal": "/assets/textures/wood/wood_normal.jpg",
+      "roughness": "/assets/textures/wood/wood_roughness.jpg",
+      "ao": "/assets/textures/wood/wood_ao.jpg"
+    },
+    "plaster": {
+      "diffuse": "/assets/textures/plaster/plaster_diffuse.jpg",
+      "normal": "/assets/textures/plaster/plaster_normal.jpg",
+      "roughness": "/assets/textures/plaster/plaster_roughness.jpg",
+      "ao": "/assets/textures/plaster/plaster_ao.jpg"
+    }
+  },
+  "hdri": {
+    "url": "/assets/hdri/kloppenheim_06_1k.hdr"
+  }
+}

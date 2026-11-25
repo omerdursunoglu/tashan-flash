@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Production build
+dist/
+
+# Local env & editor
+.env
+.env.local
+.DS_Store
+*.log
+
+# Scratch and temp root test images
+test_*.png
